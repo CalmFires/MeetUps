@@ -50,7 +50,7 @@ export async function getStaticProps() {
   const client = await MongoClient.connect(
     "mongodb+srv://calmfires:1.0Hellofriend.mov@cluster0.ytmtm.mongodb.net/meetups?retryWrites=true&w=majority"
   );
-  console.log(client);
+
   const db = client.db();
 
   const meetupsCollection = db.collection("meetups");
